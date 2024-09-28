@@ -1,0 +1,176 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    height: 50px;    
+    flex-wrap:nowrap !important; /* Explicitly prevent wrapping */
+
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-icons a{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+
+
+.navbar-title h4{
+    font-weight:500;
+    text-decoration: underline;
+    margin-left: 40px;
+}
+
+.navbar-contact{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-contact a{
+    font-weight: bold;
+    color: white;
+}
+
+.divider{
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 12px;
+
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) { /* Temporarily set to 768px for debugging */
+    .navbar {
+        background-color: red; /* Visually see if this applies */
+        padding: 5px 5px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent wrapping */
+    }    
+    
+
+    .navbar-title h4 {
+        font-size: 22px; /* Smaller title text */
+        margin: 0;         
+        line-height:2;
+        padding: 0px 10px; 
+        white-space: nowrap; /* Ensure the title stays in one line */
+        overflow: hidden; /* Hide overflow */        
+        flex-grow: 1; /* Allow the title to take available space */                      
+    }
+
+    .navbar-icons a{
+        font-size: 22px; /* Keep icons slightly smaller */
+        padding-left: 10px; /* Reduce spacing between icons */
+        margin: 0;
+        line-height: 1;
+
+    }   
+
+    .navbar-contact a {
+        font-size: 22px; /* Smaller text for contact info */
+        margin-right: 10px; /* Add space between contact items */
+        
+    }
+
+    .divider {
+        margin: 0 8px; /* Reduce space around divider */
+        font-size: 14px; /* Adjust size of divider to match smaller text */
+    }
+
+    .navbar-icons{
+        justify-content: center; /* Center-align icons */
+        margin-right: 0;
+    }
+
+    .navbar-icons a{
+        padding-left: 5px; /* Reduce spacing between icons */
+    }
+
+    .navbar-contact {
+        display: flex; 
+        align-items: center; 
+        margin: 0;
+        padding: 0px 5px;
+        flex-direction: row; 
+    }
+
+}
+
+@media (max-width: 480px){
+    .navbar {
+        padding: 5px 5px; /* Reduce padding to save space */
+        height: auto; /* Allow the navbar to expand vertically if needed */
+        flex-wrap: wrap;        
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent wrapping */
+        background-color: seagreen;
+        height: 60px;
+    }
+    
+
+    .navbar-title h4 {
+        font-size: 22px; /* Smaller title text */
+        margin: 0;         
+        line-height:1.5;
+        padding: 0px 20px;               
+    }
+
+    .navbar-icons a{
+        font-size: 22px; /* Keep icons slightly smaller */
+        padding-left: 10px; /* Reduce spacing between icons */
+        margin: 0;
+        line-height: 1;
+
+    }   
+
+    .navbar-contact a {
+        font-size: 22px; /* Smaller text for contact info */
+        margin-right: 10px; /* Add space between contact items */
+        
+    }
+
+    .divider {
+        margin: 0 8px; /* Reduce space around divider */
+        font-size: 14px; /* Adjust size of divider to match smaller text */
+    }
+
+    .navbar-icons{
+        justify-content: center; /* Center-align icons */
+        margin-right: 0;
+    }
+
+    .navbar-icons a{
+        padding-left: 5px; /* Reduce spacing between icons */
+    }
+
+    .navbar-contact {
+        display: flex;
+        align-items: center; 
+        margin: 0;
+        padding: 0px 5px;
+        flex-direction: row;
+    }
+
+    
+}
+
+
+

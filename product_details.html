@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Navbar</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg text-white custom-nav">
+            <div class="container">
+                <div class="row w-100">
+
+                    <!-- Left Icons-->
+                    <div class="d-flex align-items-center col-12 col-md-4 social-icon">
+                        <a href="https://facebook.com" class="text-white margin-end" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" class="text-white" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <!-- Middle Title-->
+                    <div class="navbar-title col-12 col-md-4 text-center text-md-start">
+                        <h4 class="text-uppercase text-white">Lorem Ipsum Dolor Sit Amet</h4>
+                    </div>
+
+                    <!-- Right Contacts -->
+                    <div class="d-flex align-items-center col-12 col-md-4 justify-content-md-end contact-link">
+                        <a href="#" class="text-white fw-bold text-decoration-none">Lorem@Mail.Com</a>
+                        <span class="divider text-white fw-bold mx-2">|</span>
+                        <a href="#" class="text-white fw-bold text-decoration-none">Call:+1234567890</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light nav2 ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brand Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link custom-li-one" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-li-one" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Product 1</a></li>
+                                <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                <li><a class="dropdown-item" href="#">Product 3</a></li>
+                                <li><a class="dropdown-item" href="#">Product 4</a></li>
+                                <li><a class="dropdown-item" href="#">Product 5</a></li>
+                                <li><a class="dropdown-item" href="#">Product 6</a></li>
+                            </ul>
+
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Product 1</a></li>
+                                <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                <li><a class="dropdown-item" href="#">Product 3</a></li>
+                                <li><a class="dropdown-item" href="#">Product 4</a></li>
+                                <li><a class="dropdown-item" href="#">Product 5</a></li>
+                                <li><a class="dropdown-item" href="#">Product 6</a></li>
+                            </ul>
+
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Product 1</a></li>
+                                <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                <li><a class="dropdown-item" href="#">Product 3</a></li>
+                                <li><a class="dropdown-item" href="#">Product 4</a></li>
+                            </ul>
+
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Product 1</a></li>
+                                <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                <li><a class="dropdown-item" href="#">Product 3</a></li>
+                                <li><a class="dropdown-item" href="#">Product 4</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-li-one" href="#">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-li-one" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-li-one" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link custom-li-two" href="#" target="_blank"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-li-two" href="#" target="_blank"><i class="fas fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-li-two" href="#" target="_blank"><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-li-two" href="#" target="_blank"><i
+                                class="fas fa-shopping-bag"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row bg-light mb-5 py-3">
+            <div class="col-6">
+                <h6 class="text-center fw-bold mt-2 products ">Product Name</h6>
+            </div>
+            <div class="col-6 mt-1 text-center 1 products-nav ">
+                <small><a href="#" class="text-black fw-bold text-decoration-none">Home</a></small>
+                <small><span class="divider text-black fw-bold mx-2">|</span></small>
+                <small><a href="#" class="text-black fw-bold text-decoration-none">Product Details</a></small>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card hover-container">
+                    <img src="images/Clothes3.png" class="img-fluid" alt="Image 1">
+                    <div class="hover-icons">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-sync-alt"></i></a>
+                        <a href="#"><i class="fas fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col-3">
+                        <img src="images/Clothes2.png" class="img-fluid small-image">
+                    </div>
+
+                    <div class="col-3">
+                        <img src="images/Clothes3.png" class="img-fluid small-image">
+                    </div>
+
+                    <div class="col-3">
+                        <img src="images/Clothes2.png" class="img-fluid small-image">
+                    </div>
+
+                    <div class="col-3">
+                        <img src="images/Clothes3.png" class="img-fluid small-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-8 mb-8">
+                <div>
+                    <h6 class="fw-bolder">Long Sleeve Leopard T-Shirt</h6>
+                    <p class="mb-1">
+                        <small><strong>$250</strong></small><br> <del class="text-muted">$321</del>
+                    </p>
+                    <a href="#"><i class="fas fa-star" style="color: #FFD43B;"></i></a>
+                    <a href="#"><i class="fas fa-star" style="color: #FFD43B;"></i></a>
+                    <a href="#"><i class="fas fa-star" style="color: #FFD43B;"></i></a>
+                    <a href="#"><i class="fas fa-star" style="color: #FFD43B;"></i></a>
+                    <a href="#"><i class="fas fa-star" style="color: #FFD43B;"></i></a>
+                    <a href="#" class="text-black fw-bold">3 reviews</a>
+                </div>
+
+                <div class="mt-3">
+                    <small class="text-muted">Availability:</small> <strong><small>In Stock(7 items)</small></strong>
+                </div>
+                <div>
+                    <small class="text-muted">Products Type:</small> <strong><small>T-Shirt</small></strong>
+                </div>
+
+                <div class="mt-2">
+                    <small><strong>Color:</strong></small><br>
+                    <div class="d-flex color-container-product-details">
+                        <div class="colors">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input red" type="radio" name="red" id="red" value="red">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input yellow" type="radio" name="yellow" id="yellow"
+                                    value="yellow">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input white" type="radio" name="white" id="white"
+                                    value="white">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input blue" type="radio" name="blue" id="blue" value="blue">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input green" type="radio" name="green" id="green"
+                                    value="green">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input pink" type="radio" name="pink" id="pink" value="pink">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input violet" type="radio" name="violet" id="violet"
+                                    value="violet">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input orange" type="radio" name="orange" id="orange"
+                                    value="orange">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input purple" type="radio" name="purple" id="purple"
+                                    value="purple">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input black" type="radio" name="black" id="black"
+                                    value="black">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input brown" type="radio" name="brown" id="brown"
+                                    value="brown">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input grey" type="radio" name="grey" id="grey" value="grey">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <small><strong>Size:</strong></small>
+                    <div class="size-options-product-details">
+                        <label class="size-label">
+                            <input type="checkbox" name="size" value="XS"> <span>XS</span>
+                        </label>
+
+                        <label class="size-label">
+                            <input type="checkbox" name="size" value="S"> <span>S</span>
+                        </label>
+
+                        <label class="size-label">
+                            <input type="checkbox" name="size" value="M"> <span>M</span>
+                        </label>
+
+                        <label class="size-label">
+                            <input type="checkbox" name="size" value="XL"> <span>XL</span>
+                        </label>
+
+                        <label class="size-label">
+                            <input type="checkbox" name="size" value="XXL"> <span>XXL</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-black fw-bold product_details_icon me-3"><i
+                            class="fas fa-crop-alt" style="color: black;"></i> SIZE GUIDE</a>
+                    <a href="#" class="text-decoration-none text-black fw-bold product_details_icon me-3"><i
+                            class="fas fa-truck" style="color: black;"></i> SHIPPING</a>
+                    <a href="#" class="text-decoration-none text-black fw-bold product_details_icon me-3"><i
+                            class="fas fa-envelope" style="color: black;"></i> ASK ABOUT THIS PRODUCTS</a>
+                </div>
+
+                <div class="mt-3 d-flex justify-content-product-details">
+                    <div class="quantity me-3">
+                        <button type="button" class="btn-minus" onclick="decrement()">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="text" value="1" id="qtyInput" class="plus_minus_text">
+                        <button type="button" class="btn-plus" onclick="increment()">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-dark fw-bold add-to-cart">ADD TO CART</a>
+                </div>
+
+                <div class="mt-3">
+                    <a href="#" class="btn btn-sm btn-light fw-bold wishlist-compare"><i class="fas fa-heart"></i> ADD
+                        TO WHISHLIST</a>
+                    <a href="#" class="btn btn-sm btn-light fw-bold wishlist-compare"><i class="fas fa-sync-alt"></i>
+                        ADD TO COMPARE</a>
+                    <p class="small text-muted mt-2">I agree with the terms and conditions</p>
+                    <a href="#" class="btn btn-sm btn-dark fw-bold buy-now"> BUY NOW</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 mb-5 nav-row">
+            <div class="col-12 col-lg-8 col-md-8">
+                <ul class="nav nav-tabs">
+
+                    <li class="nav-item">
+                        <a class="nav-link active description" id="description-tab" data-bs-toggle="tab"
+                            href="#description" role="tab"><i class="far fa-dot-circle"></i> Description</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="add-info-tab" data-bs-toggle="tab" href="#additional-info" role="tab"><i
+                                class="far fa-dot-circle"></i>
+                            Additional Information</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="shipping-tab" data-bs-toggle="tab" href="#shipping" role="tab"><i
+                                class="far fa-dot-circle"></i>
+                            Shipping</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="buy-from-us-tab" data-bs-toggle="tab" href="#why-buy" role="tab">
+                            <i class="far fa-dot-circle"></i>
+                            Why Buy From Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link review" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab"><i
+                                class="far fa-dot-circle"></i>
+                            Reviews</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="description" role="tabpanel"
+                        aria-labelledby="description-tab">
+                        <!-- Description Content -->
+                        <p class="mt-5">
+                            <small class="text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum.
+                            </small>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-between px-0">
+                                <ul>
+                                    <li class="small text-muted">Fabric 1: 100% Polyester</li>
+                                    <li class="small text-muted">Fabric 2: 100% Polyester, Lining: 100% Polyester</li>
+                                    <li class="small text-muted">Fabric 3: 75% Polyester, 20% Viscose, 5% Elastane</li>
+                                </ul>
+
+
+                                <ul>
+                                    <li class="small text-muted">Fabric 3: 75% Polyester,20% Viscose,5% Elastane</li>
+                                    <li class="small text-muted">Fabric 2: 100% Polyester, Lining: 100% Polyester</li>
+                                    <li class="small text-muted">Fabric 1: 100% Polyester</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="additional-info" role="tabpanel" aria-labelledby="add-info-tab">
+                        <!-- Additional Information Content -->
+                        <p class="mt-5">Additional information about the product.</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                        <!-- Shipping Content -->
+                        <p class="mt-5">Shipping information.</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="why-buy" role="tabpanel" aria-labelledby="buy-from-us-tab">
+                        <!-- Why Buy From Us Content -->
+                        <p class="mt-5">Reasons to buy from us.</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                        <!-- Reviews Content -->
+                        <p class="mt-5">Customer reviews.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5">
+        <h6 class="text-center fw-bold"><small>Our Shop</small></h6>
+        <h2 class="text-center fw-bold">Related Products</h2>
+
+        <div class="row ">
+
+            <div class="col-12 col-lg-4 mb-5 mt-5">
+                <div class="card hover-container">
+                    <img src="images/Clothes6.png" class="img-fluid" alt="Image 3">
+                    <div class="hover-icons">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-sync-alt"></i></a>
+                        <a href="#"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">
+                            <small class="text-muted"><del>150$</del><strong>100$</strong></small>
+                            <small class="text-muted-two"><strong>Add to Cart</strong></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-5 mt-5">
+                <div class="card hover-container">
+                    <img src="images/Clothes4.png" class="img-fluid" alt="Image 3">
+                    <div class="hover-icons">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-sync-alt"></i></a>
+                        <a href="#"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">
+                            <small class="text-muted"><del>$321</del><strong>$250</strong></small>
+                            <small class="text-muted-two"><strong>Add to Cart</strong></small>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-5 mt-5">
+                <div class="card hover-container">
+                    <img src="images/Clothes2.png" class="img-fluid" alt="Image 2">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="badge sale">SALE! </span>
+                    </div>
+                    <div class="hover-icons">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-sync-alt"></i></a>
+                        <a href="#"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">
+                            <small class="text-muted"><del>$210</del><strong>$200</strong></small>
+                            <small class="text-muted-two"><strong>Add to Cart</strong></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="text-white custom-footer mt-5">
+        <div class="container-fluid c1">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h6 class="footer-h6">About the Store</h6>
+
+                    <!-- Contacts-->
+                    <ul class="list-unstyled custom-ul">
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white">Lorm iosisinns mososknf
+                                omsom</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white"><i
+                                    class="fas fa-map-marker-alt"></i><span class="span">Lorem Street,
+                                    USA, New York </span></a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white"><i class="fas fa-phone"
+                                    class="phone"></i><span class="span">+01 123 456
+                                    789</span></a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white"><i class="fas fa-envelope"></i>
+                                <span class="span">Mail.com</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h6 class="footer-h6">Quick Links</h6>
+
+                    <ul class="list-unstyled custom-ul">
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white">Shop Now</a>
+                        </li>
+                        <li>
+                            <a href="#!" class=" text-decoration-none text-white">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white">Ipsum</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h6 class="footer-h6">Customer Support</h6>
+
+                    <ul class="list-unstyled custom-ul">
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white">My Account</a>
+                        </li>
+                        <li>
+                            <a href="#!" class=" text-decoration-none text-white">Checkout</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-decoration-none text-white">Cart</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Order Tracking</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Help & Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between align-items-center c2">
+                <div class="col-12 col-md-8 p-3">
+                    <a href="#" class="text-decoration-none text-white me-3 small-font">© Elegance by Monika:</a>
+                    <a href="#" class="text-decoration-none text-white me-3 small-font">Privacy Policies</a>
+                    <a href="#" class="text-decoration-none text-white small-font">Terms & Conditions</a>
+                </div>
+                <div class="col-12 col-md-4 pay_icons">
+                    <a href="#" class="text-white me-2">
+                        <i class="fab fa-cc-visa"></i> <!-- Visa Icon -->
+                    </a>
+                    <a href="#" class="text-white me-2">
+                        <i class="fab fa-cc-mastercard"></i> <!-- MasterCard Icon -->
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fab fa-cc-amex"></i> <!-- Amex Icon -->
+                    </a>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link to External JS File-->
+    <script src="js/product_details.js"></script>
+
+
+</body>
+
+</html>

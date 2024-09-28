@@ -1,0 +1,951 @@
+html,
+body {
+    height: 100%;
+    /* Ensure that the body takes the full height */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    flex: 1;
+    /* Make the body take up the remaining space */
+}
+
+.container-fluid {
+    flex-grow: 1;
+    /* Makes the container take up the remaining space */
+}
+
+.custom-nav {
+    background-color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav2 {
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 0px;
+}
+
+
+
+
+.custom-li-one {
+    color: black !important;
+
+}
+
+.custom-li-two {
+    color: black !important;
+}
+
+.margin-end {
+    margin-right: 16px;
+}
+
+.navbar-title {
+    text-decoration: underline;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.navbar-nav {
+    margin-right: 10px;
+}
+
+.text-md-start {
+    text-align: center !important;
+    padding-left: 50px !important;
+    padding-top: 2px !important;
+}
+
+.navbar-title h4 {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+
+.custom-btn-transparent {
+    background-color: white;
+    border: solid 1px;
+    color: black;
+    font-weight: bold;
+    border-radius: 0%;
+    width: 120px;
+    margin-right: 7px;
+}
+
+.custom-btn-transparent-two {
+    background-color: transparent;
+    border: solid 1px yellow;
+    color: white;
+    font-weight: bold;
+    border-radius: 0%;
+    width: 120px;
+
+}
+
+.span {
+    margin-left: 10px;
+}
+
+.custom-footer {
+    background-color: black;
+}
+
+.c1 {
+    padding-left: 160px;
+    padding-top: 50px;
+}
+
+.c2 {
+    padding-left: 140px;
+}
+
+.custom-ul {
+    margin-bottom: 18px;
+}
+
+
+.small-font {
+    font-size: 10px;
+}
+
+.footer-h6 {
+    padding-bottom: 12px;
+}
+
+.pay_icons {
+    /* padding-left: 160px; */
+    font-size: 24px;
+}
+
+.phone {
+    transform: rotate(90deg);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0px 3px 6px black;
+    border-radius: 0;
+}
+
+.dropdown-menu ul {
+    padding: 5px;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    /* Increses the width of the dropdown */
+
+}
+
+.dropdown-menu ul li a {
+    color: gray;
+    padding: 5px 10px;
+    font-size: small;
+}
+
+.dropdown-menu ul li:first-child a {
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+.carousel-inner img {
+    height: auto;
+    max-height: 5.5in;
+}
+
+.carousel {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.custom-image {
+    object-fit: fill;
+    height: 350px;
+}
+
+
+.custom-image-two {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.custom-image-three {
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+}
+
+
+
+.first-three-images {
+    padding-right: 4px;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+.card-body {
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+.hover-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-container img {
+    transition: transform 1s ease-in-out;
+    /* Smooth transition */
+}
+
+.hover-container:hover img {
+    transform: scale(1.05);
+    /* Scale the image on hover */
+}
+
+.hover-icons {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+    flex-direction: column;
+    transform: translateX(20px);
+    /* Initially move the icons to the right */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    /* Smooth transition */
+}
+
+.hover-icons a {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.hover-container:hover .hover-icons {
+    opacity: 1;
+    /* Show the icons on hover */
+    transform: translateX(0);
+    /* Move the icons back to the original position */
+}
+
+.text-muted-two {
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transform: translateY(-22px);
+
+}
+
+.hover-container:hover .text-muted-two {
+    opacity: 1;
+}
+
+.hover-container:hover .text-muted {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.strong-image-7 {
+    padding-left: 9px;
+}
+
+.position-absolute h6 {
+    font-size: 10px;
+}
+
+.position-absolute .sale {
+    align-content: center;
+    margin-left: 22px;
+    margin-top: 14px;
+    border-radius: 50%;
+    height: 36px;
+    background-color: red;
+    font-weight: bold;
+    font-size: xx-small;
+    z-index: 10;
+    /* Ensure the sale badge is on top of the image */
+}
+
+.position-absolute .new {
+    align-content: center;
+    margin-left: 15px;
+    margin-top: 14px;
+    border-radius: 50%;
+    height: 36px;
+    background-color: green;
+    font-weight: bold;
+    font-size: xx-small;
+    z-index: 10;
+    /* Ensure the new badge is on top of the image */
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+
+}
+
+.image-8-h6 {
+    padding-left: 85px;
+}
+
+.image-9-h6 {
+    padding-left: 75px;
+}
+
+.image-10-h6 {
+    padding-left: 15px;
+}
+
+.hover-container-two {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-buttons a {
+    color: black !important;
+    background-color: white !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    transform: translateY(40px);
+    transition: 0.5s ease-in-out, transform 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.hover-container-two:hover .hover-buttons a {
+    transform: translate(-3px, -4px);
+}
+
+.hover-container-two:hover .position-absolute {
+    transform: translateY(-45px);
+    transition: 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hover-container-two .position-absolute {
+    transform: translateY(0px);
+    transition: 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hover-container-two img {
+    transition: transform 0.5s ease-in-out;
+    /* Smooth transition */
+}
+
+.hover-container-two:hover img {
+    transform: rotate(2deg);
+    /* Rotate the image on hover */
+}
+
+.image-container {
+    height: 350px;
+    position: relative;
+}
+
+.cropped-image {
+    object-fit: cover;
+    /* Ensures the image covers the container */
+    width: 100%;
+    /* Maintain responsiveness */
+    height: 100%;
+    /* Ensures it fills the container height */
+}
+
+.overlay-text-box {
+    left: 64%;
+    transform: translate(-15%, -124%);
+    background: WHITE;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 355px;
+}
+
+
+.image-container-two {
+    height: auto;
+    position: relative;
+}
+
+.overlay-text-box-two {
+    left: 64%;
+    transform: translate(-112%, -124%);
+    background: WHITE;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 355px;
+}
+
+.sidebar{
+    background-color: white;
+}
+
+.products{
+    padding-right: 6rem !important;
+}
+.products-nav{
+    padding-left: 16rem !important;
+}
+
+.close-button{
+    border-radius: 50%;
+    height: 13px;
+    width: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer !important;
+    font-size: 8px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+
+.form-check-input:checked[type=radio] {
+    --bs-form-check-bg-image: none;
+}
+
+.form-check-input:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.current-selection{
+    font-weight: bold;
+    font-size: small;
+}
+
+.collection-list{    
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: small;
+}
+
+
+
+/* For Price slider */
+
+ .noUi-horizontal {
+    background: #161717 !important;
+    height: 8px !important;
+}
+
+.price-slider .d-flex span{
+    font-size: small !important;
+}
+.noUi-connect {
+    background: black !important;
+}
+
+.noUi-tooltip {
+    display: none;
+}
+
+/* For size checkbox */
+
+.size-options {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3px;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.size-label {
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.size-label input {
+    display: none;
+}
+
+.size-label span {
+    display: inline-block;
+    width: 23px;
+    border: 1px solid whitesmoke;
+    border-radius: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+    font-size: small;
+}
+
+/* Checked state */
+.size-label input:checked + span {
+    background-color: black;
+    color: white;    
+}
+
+/* Hover effect */
+.size-label span:hover {
+    background-color: #eaeaea;
+}
+
+/* For Colors */
+
+
+.color-container, .color-container-product-details
+    {
+    padding-left: 24px;
+}
+.colors{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;   
+}
+
+
+
+/* Common styles for all color buttons */
+.colors .form-check-input {
+    appearance: none; /* Remove default radio appearance */    
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 13px;
+    height: 13px;
+}
+
+.form-check{
+    padding: 0px ;
+    margin: 0px;
+}
+
+
+/* For product_detials icon */
+
+.product_details_icon{
+    font-size: 10px;
+}
+
+.quantity{
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-minus , .btn-plus{
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 31px;
+    color: gainsboro;
+}
+
+.plus_minus_text{
+    border: none;
+    background-color: #f0f0f0;
+    height: 31px;
+    text-align: center;
+    width: 42px;
+    font-weight: bold;
+}
+
+.add-to-cart{
+    border-radius: 0;
+}
+
+.wishlist-compare{
+    background: white;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.buy-now{
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link.description , .nav-tabs .nav-link.review {
+    background: black;
+    border: none;
+    border-radius: 0;
+    font-weight: bold       ;
+    font-size: small;
+    color: white
+}
+
+.nav-tabs .nav-link{
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: small;
+    color: black;
+}
+
+
+/* Between 769px and 992px */
+@media (min-width: 992px) {
+    .colors{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;   
+    }
+    
+    /* Common styles for all color buttons */
+    .colors .form-check-input {
+        appearance: none; /* Remove default radio appearance */    
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 13px;
+        height: 13px;
+    }
+    
+}
+
+.colors .red{
+    background-color: red;
+}
+
+.colors .yellow{
+    background-color: yellow;
+}
+
+.colors .green{
+    background-color: green;
+}
+
+.colors .blue{
+    background-color: blue;
+}
+
+.colors .pink{
+    background-color: pink;
+}
+
+.colors .violet{
+    background-color: violet;
+}
+
+.colors .orange{
+    background-color: orange;
+}
+
+.colors .black{
+    background-color: black;
+}
+
+.colors .purple{
+    background-color: purple
+}
+
+.colors .brown{
+    background-color: brown;
+}
+
+.colors .grey{
+    background-color: grey;
+}
+
+
+/* For pagination */
+
+.page-link{
+    color: black;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+
+/* For Carousels with a width less than 340px */
+@media(max-width: 340px) {
+    .carousel-caption {
+        top: 29% !important;
+        padding: 0px 0px;
+    }
+
+    .carousel-caption h1 {
+        font-size: xx-small;
+        /* Scale down the main text on small screens */
+    }
+
+    .carousel-caption small {
+        font-size: xx-small;
+        /* Scale down the small text */
+    }
+
+    .custom-btn-sm {
+        font-size: 8px;
+        /* Smaller font size */
+        padding: 0;
+        /* Reduced padding */
+        width: 40px;
+        /* Adjusted width */
+        height: auto;
+        /* Adjust the height */
+    }
+}
+
+/* For Carousels with a width between 341px and 410px */
+@media (min-width: 341px) and (max-width: 410px) {
+    .carousel-caption {
+        top: 32% !important;
+        padding: 0px 0px;
+    }
+
+    .carousel-caption h1 {
+        font-size: xx-small;
+        /* Scale down the main text on small screens */
+    }
+
+    .carousel-caption small {
+        font-size: xx-small;
+        /* Scale down the small text */
+    }
+
+    .custom-btn-sm {
+        font-size: 8px;
+        /* Smaller font size */
+        padding: 0;
+        /* Reduced padding */
+        width: 40px;
+        /* Adjusted width */
+        height: auto;
+        /* Adjust the height */
+    }
+}
+
+/* For Carousel Caption Between 411px and 76px */
+@media (min-width: 411px) and (max-width: 768px) {
+    .carousel-caption {
+        top: 47% !important;
+        padding: 0px 0px;
+    }
+
+    .carousel-caption h1 {
+        font-size: xx-small;
+        /* Scale down the main text on small screens */
+    }
+
+    .carousel-caption small {
+        font-size: xx-small;
+        /* Scale down the small text */
+    }
+
+    .custom-btn-sm {
+        font-size: 8px;
+        /* Smaller font size */
+        padding: 0;
+        /* Reduced padding */
+        width: 40px;
+        /* Adjusted width */
+        height: auto;
+        /* Adjust the height */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar-title h4 {
+        font-size: 12px;
+        /* Smaller font size for small screens */
+        text-align: center;
+
+    }
+
+    .products-nav{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .text-md-start {
+        text-align: center !important;
+        padding-left: 0px !important;
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    .social-icon i {
+        font-size: 12px;
+        /* Smaller icon size on small screens */
+    }
+
+    .contact-link {
+        font-size: 12px;
+        /* Smaller font size for contact info on small screens */
+        justify-content: flex-end;
+        /* Right align the contact info */
+
+    }
+
+
+
+    .d-flex.align-items-center {
+        justify-content: center;
+        /* Center the icons and contact info */
+        margin-bottom: 5px;
+    }
+
+    .container {
+        text-align: center !important;
+        /* Ensure the entire content is centered */
+    }
+
+
+
+    .dropdown-menu.show {
+        display: block;
+        /* To decrease the width of the dropdown */
+        max-height: 60vh;
+        overflow: scroll;
+    }
+
+
+    .c1 {
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+
+    .c2 {
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+
+    .text-muted-two {
+        display: flex;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        transform: translate(109px, -22px) !important;
+    }
+
+    .colors{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 12px;   
+    }
+    
+    /* Common styles for all color buttons */
+    .colors .form-check-input {
+        appearance: none; /* Remove default radio appearance */    
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 10px;
+        height: 10px;
+    }
+    
+
+    .top-row .text-muted {
+        font-size: 7px;
+    }
+
+    .top-row strong {
+        font-size: 10px;
+    }
+
+    .color-container-product-details{
+        justify-content: center;
+    }
+
+
+    .justify-content-product-details{
+        justify-content: center;
+    }
+
+
+    .nav-row{
+        justify-content: center;
+    }
+
+}
+
+
+/* Between 769px and 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .navbar-title h4 {
+        font-size: 12px;
+        /* Slightly larger font size for medium screens */
+        margin-top: 5px;
+    }
+
+    .social-icon i {
+        font-size: 12px;
+        /* Slightly larger icon size on medium screens */
+    }
+
+    .contact-link {
+        font-size: 12px;
+        /* Slightly larger font size for contact info on medium screens */
+        justify-content: flex-end;
+    }
+
+    .text-md-start {
+        text-align: center !important;
+        padding-left: 0px !important;
+        padding-bottom: 8px !important;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+        /* To decrease the width of the dropdown */
+        max-height: 60vh;
+        max-width: fit-content;
+        overflow: scroll;
+        padding-left: 20px;
+    }
+
+    .c1 {
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+
+    .c2 {
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+
+    .colors{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 12px;   
+    }
+    
+    /* Common styles for all color buttons */
+    .colors .form-check-input {
+        appearance: none; /* Remove default radio appearance */    
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+
